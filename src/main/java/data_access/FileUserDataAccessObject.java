@@ -88,6 +88,11 @@ public class FileUserDataAccessObject implements SignupUserDataAccessInterface,
     }
 
     @Override
+    public void setCurrentUser(String username) {
+        // We can keep this overridden method in this class empty
+    }
+
+    @Override
     public User get(String username) {
         return accounts.get(username);
     }
